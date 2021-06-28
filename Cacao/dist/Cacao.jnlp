@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Cacao.jnlp">
+  <information>
+    <title>Cacao</title>
+    <vendor>Pipo</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Cacao.jar" size="8534210" download="eager" />
+    <jar href="lib\controlsfx.jar" size="1213306" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2708772" download="eager" />
+    <jar href="lib\json-20210307.jar" size="232932" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Cacao" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="cacao.Cacao"  name="Cacao" />
+  <update check="always"/>
+</jnlp>

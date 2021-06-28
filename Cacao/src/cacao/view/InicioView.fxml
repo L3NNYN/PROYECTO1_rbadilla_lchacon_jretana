@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="950.0" prefWidth="1700.0" styleClass="Inicio" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cacao.controller.InicioViewController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="apBienvenido" layoutX="527.0" layoutY="272.0" prefHeight="405.0" prefWidth="692.0" style="-fx-background-color: skyblue;" styleClass="root2" stylesheets="@style.css">
+         <children>
+            <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="512.0" prefWidth="620.0" styleClass="root" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <AnchorPane layoutX="211.0" layoutY="128.0" prefHeight="329.0" prefWidth="303.0" styleClass="root" AnchorPane.bottomAnchor="143.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="173.0" AnchorPane.topAnchor="118.0">
+                     <children>
+                        <VBox layoutX="28.0" layoutY="14.0" prefHeight="151.0" prefWidth="227.0" spacing="25.0">
+                           <children>
+                              <JFXTextField fx:id="txtIppartida" alignment="CENTER" labelFloat="true" prefHeight="25.0" prefWidth="223.0" promptText="Ingrese el IP de la partida" />
+                              <JFXTextField fx:id="txtPuerto" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="223.0" promptText="Puerto del Servidor" />
+                              <JFXTextField fx:id="txtNickName" alignment="CENTER" labelFloat="true" layoutX="10.0" layoutY="50.0" prefHeight="25.0" prefWidth="223.0" promptText="Ingrese su NicName" />
+                              <JFXDatePicker fx:id="dtEdadJugador" onAction="#onActionEdadJugador" prefHeight="25.0" prefWidth="233.0" />
+                              <JFXComboBox fx:id="cbColores" onAction="#onActionColores" prefHeight="25.0" prefWidth="227.0" promptText="Seleccione un color" />
+                           </children>
+                        </VBox>
+                        <AnchorPane fx:id="apColorSeleccionado" layoutX="122.0" layoutY="255.0" prefHeight="31.0" prefWidth="40.0" />
+                     </children>
+                  </AnchorPane>
+                  <HBox alignment="CENTER" layoutX="111.0" layoutY="30.0" prefHeight="31.0" prefWidth="471.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="90.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido" wrappingWidth="103.12060546875">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="btnComenzar" layoutX="254.0" layoutY="509.0" onAction="#onActionComenzar" prefHeight="44.0" prefWidth="172.0" styleClass="JFXButton1" text="COMENZAR" />
+                  <JFXSpinner fx:id="spSpinner" layoutX="311.0" layoutY="449.0" prefHeight="50.0" prefWidth="57.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="136.0" fitWidth="652.0" layoutX="537.0" layoutY="116.0">
+         <image>
+            <Image url="@../resources/font1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorPane" fx:id="apSalaEspera" layoutX="537.0" layoutY="282.0" prefHeight="405.0" prefWidth="692.0" style="-fx-background-color: skyblue;" styleClass="root2" stylesheets="@style.css" visible="false">
+         <children>
+            <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="512.0" prefWidth="620.0" styleClass="root" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="111.0" layoutY="30.0" prefHeight="31.0" prefWidth="471.0" AnchorPane.leftAnchor="111.0" AnchorPane.rightAnchor="110.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sala de espera" wrappingWidth="139.12060546875">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <JFXButton fx:id="btnlISTO" layoutX="241.0" layoutY="291.0" onAction="#onActionListo" prefHeight="44.0" prefWidth="172.0" styleClass="JFXButton1" text="LISTO" />
+                  <HBox alignment="CENTER" layoutX="41.0" layoutY="133.0" prefHeight="100.0" prefWidth="571.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fx:id="txtJ1" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Ebrima" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fx:id="txtJ2" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Ebrima" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="110.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fx:id="txtJ3" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Ebrima" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fx:id="txtJ4" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font name="Ebrima" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

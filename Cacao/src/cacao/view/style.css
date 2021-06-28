@@ -1,0 +1,217 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.Inicio {
+    -fx-background-image:url("../resources/Inicio.jpg");
+    -fx-background-size:stretch;
+    -fx-color: #222;
+    -fx-padding: 2px;
+}
+
+.root {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 9, 1, 0, 0);
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+}
+
+.root2{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8),  0, 0, 0, 0);
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: firebrick;
+}
+
+.JFXButton1{
+    -fx-background-color: #61A7FF; /* Green */
+    -fx-border: none;
+    -fx-color: #000000;
+    -fx-padding: 5px;
+    -fx-text-align: center;
+    -fxtext-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 16px;
+}
+
+.fondoMesa{
+    -fx-background-image:url("../resources/FondoMesa.jpg");
+    -fx-background-size:stretch;
+    -fx-color: #222;
+    -fx-padding: 2px;  
+}
+
+#opacity{
+    -fx-background-color:rgb(255,255,255);
+    -fx-opacity:0.7; /* Opacidad 60% */
+    -fx-width:73px;
+    -fx-height:73px;
+    -fx-effect: dropshadow(three-pass-box, rgba(60, 172, 255,0.8), 9, 1, 0, 0);
+    -fx-padding: 1;
+    -fx-background-radius: 1;
+}
+
+.Rojo{
+    -fx-background-color: #FF0000; 
+}
+
+#Rojo{
+    -fx-background-color: #FF0000; 
+}
+
+.Azul{
+    -fx-background-color: #0017FF; 
+}
+
+#Azul{
+    -fx-background-color: #0017FF; 
+}
+
+.Amarillo{
+    -fx-background-color: #FFFB00; 
+}
+
+#Amarillo{
+    -fx-background-color: #FFFB00; 
+}
+
+.Verde{
+    -fx-background-color: #1FFF00; 
+}
+
+#Verde{
+    -fx-background-color: #1FFF00; 
+}
+
+.Celeste{
+    -fx-background-color: #00AAE4; 
+}
+
+#Celeste{
+    -fx-background-color: #00AAE4; 
+}
+
+.Morado{
+    -fx-background-color: #AA00FF; 
+}
+
+#Morado{
+    -fx-background-color: #AA00FF; 
+}
+
+.Rosado{
+    -fx-background-color: #ff0080; 
+}
+
+#Rosado{
+    -fx-background-color: #ff0080; 
+}
+
+.Turqueza{
+    -fx-background-color: #5dc1b9; 
+}
+
+#Turqueza{
+    -fx-background-color: #5dc1b9; 
+}
+
+.Cian{
+    -fx-background-color:  #00ffff; 
+}
+
+#Cian{
+    -fx-background-color:  #00ffff; 
+}
+
+.Gris{
+    -fx-background-color:  #9b9b9b; 
+}
+
+#Gris{
+    -fx-background-color:  #9b9b9b; 
+}
+
+.Negro{
+    -fx-background-color:  #000000;
+}
+
+#Negro{
+    -fx-background-color:  #000000;
+}
+
+.Marron{
+    -fx-background-color:  #804000;
+}
+
+#Marron{
+    -fx-background-color:  #804000;
+}
+
+.Naranja{
+    -fx-background-color:  #ff8000;
+}
+
+#Naranja{
+    -fx-background-color:  #ff8000;
+}
+
+.Magenta{
+    -fx-background-color:  #ff00ff;
+}
+
+#Magenta{
+    -fx-background-color:  #ff00ff;
+}
+
+.VerdeOscuro{
+    -fx-background-color:  #2d572c;
+}
+
+#VerdeOscuro{
+    -fx-background-color:  #2d572c;
+}
+
+.Violeta{
+    -fx-background-color:  #4c2882;
+}
+
+#Violeta{
+    -fx-background-color:  #4c2882;
+}
+
+.Aguamarina{
+    -fx-background-color:  #9fd5d1;
+}
+
+#Aguamarina{
+    -fx-background-color:  #9fd5d1;
+}
+
+.Dorado{
+    -fx-background-color:  #efb810;
+}
+
+#Dorado{
+    -fx-background-color:  #efb810;
+}
+
+.Fucsia{
+    -fx-background-color:  #e30052;
+}
+
+#Fucsia{
+    -fx-background-color:  #e30052;
+}
+
+.Lima{
+    -fx-background-color:  #32cd32;
+}
+
+#Lima{
+    -fx-background-color:  #32cd32;
+}
+
+
